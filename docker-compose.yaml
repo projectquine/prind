@@ -57,8 +57,6 @@ services:
     volumes:
       - /dev/null:/opt/klipper/config/null
       - /dev/null:/opt/klipper/docs/null
-      - /run/dbus:/run/dbus
-      - /run/systemd:/run/systemd
       - run:/opt/printer_data/run
       - gcode:/opt/printer_data/gcodes
       - log:/opt/printer_data/logs
