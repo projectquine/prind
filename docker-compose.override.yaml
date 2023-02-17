@@ -29,6 +29,9 @@ services:
 #      traefik.http.routers.webcam.entrypoints: web
 #      traefik.http.middlewares.webcam.stripprefix.prefixes: /webcam
 #      traefik.http.routers.webcam.middlewares: webcam
+  klipperscreen:
+    environment:
+      DISPLAY: 172.17.0.1:0
 
   traefik:
     volumes:
