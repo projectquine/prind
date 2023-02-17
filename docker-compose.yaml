@@ -126,12 +126,9 @@ services:
   klipperscreen:
     image: mkuf/klipperscreen:latest
     restart: unless-stopped
-    network_mode: host
     profiles:
       - klipperscreen
     volumes:
-      - /etc/localtime:/etc/localtime:ro
-      - /tmp/.X11-unix:/tmp/.X11-unix
       - ./config:/opt/cfg
     labels:
       org.prind.service: klipperscreen
