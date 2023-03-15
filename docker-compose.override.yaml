@@ -7,13 +7,7 @@
 ## Add your personal config here
 services:
   klipper:
-#    privileged: true
-#    volumes:
-#      - /dev:/dev
-#      - ./config:/opt/printer_data/config
-#      - run:/opt/printer_data/run
-#      - gcode:/opt/printer_data/gcodes
-#      - log:/opt/printer_data/logs
+    hostname: QuineOS
     devices:
       - /dev/ttyACM0:/dev/ttyACM0
 
