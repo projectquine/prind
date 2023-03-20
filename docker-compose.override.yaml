@@ -9,7 +9,7 @@ services:
   klipper:
     hostname: QuineOS
     devices:
-      - /dev/ttyACM0:/dev/ttyACM0
+      - /dev/klipper:/dev/klipper
 
 #  webcam:
 #    <<: *ustreamer-svc
