@@ -25,7 +25,9 @@ services:
 #      traefik.http.routers.webcam.middlewares: webcam
   klipperscreen:
     environment:
-      DISPLAY: 172.17.0.1:0
+      DISPLAY: :0
+    volumes:
+      - /data/data/com.termux/files/usr/tmp/.X11-unix:/tmp/.X11-unix:rw
 
   traefik:
     volumes:
